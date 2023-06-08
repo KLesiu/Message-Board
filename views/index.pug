@@ -1,10 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  each message in messages
-    h2= message.text 
-    p= message.user  
-    p= message.added
+  div.container
+    h1= title
+    
+    each message in messages
+      div.element
+        h2= message.text 
+        p= `Added by ${message.user} - ${message.added}`
+
+    a.add(class="button" href="/new") Add message   
+        
   

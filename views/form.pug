@@ -2,8 +2,9 @@ extends layout
 
 
 block content
-    h2 Form 
+    h1 Form 
     form(method="POST" action="/new")
         input(type="text" name="user" value="Username")
-        input( type="text" name="msg" value="Message")
-        button(type="submit") 
+        textarea(type="text" name="msg" )
+        
+        button(type="submit") ADD
